@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(48, 71, 240);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.titulo{
+    color:rgb(0, 99, 185);
+    font-family: fantasy;
+}
+
+.parrafo1{
+    color:rgb(50, 112, 246);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.parrafo2{
+    color:rgb(50, 112, 246);
+    font-family: 'Times New Roman', Times, serif;
+}
+/*
+canvas {
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+canvas {
+    /*background-image: url("https://us.123rf.com/450wm/golubovy/golubovy1906/golubovy190600326/124399924-fondo-de-arte-abstracto-de-textura-de-fieltro-azul-oscuro-superficie-de-cart%C3%B3n-de-color-copie-el-esp.jpg?ver=6");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    */
+    background-color: white;
+    height:200px;
+    width:100%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.container button {
+    width:150px;
+    margin:5px;
+    border-radius: 5px;
+}
+#principal button{
+    width:150px;
+    margin:5px;
+    border-radius: 5px;
+}
+#principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+@media (min-width: 768px){ 
+    .buttonleftmenu{
+        text-align: right;
+    }
+    .buttonrightmenu{
+        text-align: left;
+    }
+    .buttoncentermenu{
+        text-align: center;
+    }
+}
+.modalSpin {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+}
