@@ -66,13 +66,24 @@
 
         //lista doblemente ligada
         import {insertar_al_inicio as insertar_al_inicio_lstDobLig} from './lib/lstDobLig/index.js';
+        import {insertar_ultimo as insertar_al_final_lstDobLig} from './lib/lstDobLig/index.js';
         import {insertar_antes_x as insertar_antes_x_lstDobLig} from './lib/lstDobLig/index.js';
-        import {elimina_inicio as elimina_inicio_lstDobLig} from './lib/lstDobLig/index.js';
         import {insertar_despues_x as insertar_despues_x_lstDobLig} from './lib/lstDobLig/index.js';
+        import {elimina_inicio as elimina_inicio_lstDobLig} from './lib/lstDobLig/index.js';
+        import {eliminar_al_ultimo as eliminar_ultimo_lstDobLig} from './lib/lstDobLig/index.js';
+        import {eliminar_x as eliminar_x_lstDobLig} from './lib/lstDobLig/index.js';
+        import {eliminar_antes_x as eliminar_antes_x_lstDobLig} from './lib/lstDobLig/index.js';
+        import {eliminar_despues_x as eliminar_despues_x_lstDobLig} from './lib/lstDobLig/index.js';
+
         window.insertar_al_inicio_lstDobLig=insertar_al_inicio_lstDobLig;
+        window.insertar_al_final_lstDobLig=insertar_al_final_lstDobLig;
         window.insertar_antes_x_lstDobLig=insertar_antes_x_lstDobLig;
-        window.elimina_inicio_lstDobLig=elimina_inicio_lstDobLig;
         window.insertar_despues_x_lstDobLig=insertar_despues_x_lstDobLig;
+        window.elimina_inicio_lstDobLig=elimina_inicio_lstDobLig;
+        window.eliminar_ultimo_lstDobLig=eliminar_ultimo_lstDobLig;
+        window.eliminar_x_lstDobLig=eliminar_x_lstDobLig;
+        window.eliminar_antes_x_lstDobLig=eliminar_antes_x_lstDobLig;
+        window.eliminar_despues_x_lstDobLig=eliminar_despues_x_lstDobLig;
 
         //eventos de menu para manejar los mensajes
         import {clickListaSimplementeEnlazada, clickListaCirsularSimplementeEnlazada, clickListaDoblementeEnlazada} from './lib/index.js';
@@ -209,7 +220,7 @@
                     <button onclick="insertar_antes_x_lstCirSimpLig()">Insertar antes de X</button>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6">
-                    <button onclick="insertar_despues_x_lstCirSimpLig()">Eliminar depues de X</button>
+                    <button onclick="insertar_despues_x_lstCirSimpLig()">Insertar depues de X</button>
                 </div>
             </div>
             <div class="row text-center">
@@ -259,19 +270,40 @@
         <div  class="container">
             <div class="row text-center">
                 <div class="col-xs-12 col-sm-12 col-md-6 ">
-                        <button onclick="insertar_al_inicio_lstDobLig()">INSERTAR AL INICIO</button>
+                        <button onclick="insertar_al_inicio_lstDobLig()">Insertar al inicio</button>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6">
-                        <button onclick="insertar_despues_x_lstDobLig()">INSERTAR DESPUES DE X</button>
+                        <button onclick="insertar_al_final_lstDobLig()">Insertar al final</button>
                 </div>
             </div>
             <div class="row text-center">
                     <div class="col-xs-12 col-sm-12 col-md-6">
-                        <button onclick="insertar_antes_x_lstDobLig()">INSERTAR ANTES DE X</button>
+                        <button onclick="insertar_antes_x_lstDobLig()">Insertar antes de X</button>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6">
-                        <button onclick="elimina_inicio_lstDobLig()">ELIMINAR AL INICIO</button>
+                        <button onclick="insertar_despues_x_lstDobLig()">Insertar depues de X</button>
                     </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <button onclick="elimina_inicio_lstDobLig()">Elimina inicio</button>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <button onclick="eliminar_ultimo_lstDobLig()">Elimina ultimo</button>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <button onclick="eliminar_antes_x_lstDobLig()">Elimina antes X</button>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <button onclick="eliminar_despues_x_lstDobLig()">Elimina despues X</button>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <button onclick="eliminar_x_lstDobLig()">Elimina X</button>
+                </div>
             </div>
             <div class="row text-center">
                 <div class="col">
